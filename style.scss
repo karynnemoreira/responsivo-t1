@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(
+    205,
+    92,
+    92
+  ); //1º red , 2º green, 3º blue. Numeração vai de 0 até 255.
+
+  background-color: rgba(
+    205,
+    92,
+    92,
+    0.2
+  ); //alpha, trabalha com a opacidade. Vai de 0.1 até 0.9, quando maior for, mais forte fica.
+
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //Estou dizendo que a cor de fundo da header enquanto tiver nessas medidas, de 200px até 400px vai se comportar dessa maneira. Quando não, estará com seu comportamento padrão.
+
+  //   @media (min-width: 201px) and (max-width: 400px) {
+  //     background-color: rgb(255, 20, 147);
+  //     height: 20vh;
+
+  //     h1 {
+  //       font-size: 3rem;
+  //       text-align: center;
+  //     }
+  //   }
+}
+
+//--------------------TAMANHO DAS TELAS--
+
+//watch - (max-width: 200px) relógio
+
+@media (max-width: 200px) {
+  header {
+    background-color: yellow;
+    height: 100vh;
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}
+
+//mobile - (min-width: 201px) and (max-width: 500px)
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-color: aqua;
+    height: 20vh;
+    text-align: center;
+  }
+}
+
+//tablet - (min-width: 501px) and (max-width: 900px)
+
+@media (min-width: 501px) and (max-width: 900px) {
+  header {
+    background-color: violet;
+    height: 20vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+//LAPTOP/NOTEBOOK - (min-width: 901) and (max-width: 1500px)
+
+@media (min-width: 901px) and (max-width: 1500px) {
+  header {
+    background-color: rgb(136, 248, 0);
+    height: 20vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+//DESKTOP - (min-width: 1501px) and (max-width: 1800px)
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  header {
+    background-color: rgb(12, 68, 252);
+    height: 20vh;
+    text-align: center;
+  }
+}
+
+
+
+//WIDE -SCREEN-DESKTOP - DESKTOP DE TELA AMPLA (min-width: 1801px) 
+
+@media (min-width: 1801px) {
+    header {
+      background-color: rgb(252, 156, 12);
+      height: 20vh;
+      text-align: center;
+    }
+  }

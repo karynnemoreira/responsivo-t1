@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(205, 92, 92);
+  background-color: rgba(205, 92, 92, 0.2);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 200px) {
+  header {
+    background-color: yellow;
+    height: 100vh;
+  }
+  header h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-color: aqua;
+    height: 20vh;
+    text-align: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  header {
+    background-color: violet;
+    height: 20vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 901px) and (max-width: 1500px) {
+  header {
+    background-color: rgb(136, 248, 0);
+    height: 20vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1800px) {
+  header {
+    background-color: rgb(12, 68, 252);
+    height: 20vh;
+    text-align: center;
+  }
+}
+@media (min-width: 1801px) {
+  header {
+    background-color: rgb(252, 156, 12);
+    height: 20vh;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
